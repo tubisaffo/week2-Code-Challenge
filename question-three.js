@@ -11,7 +11,12 @@ const isPrimeNo = num => {  // function to check if a number is prime
   return true // if the number is not divisible by any number between 5 and the square root of the number, it is a prime number
 }
 
-const arePrime = arr => {
+const arrayToCheck = arr  => {
   return arr.filter(isPrimeNo)  // filtering the array to return only the prime numbers
+
+
+
 }
 
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+console.log(arrayToCheck(arr));
